@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>A Sweet Start</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Simple recipes for people who want to bake.">
+<meta name="author" content="Marianne Wagstaff">
+<meta charset="UTF-8">
+    <link rel="stylesheet" href="traveler.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<!--This is the start of the header section-->
+<header> 
+<img src="images/sweetstartlogo.png" alt="site logo" width="55" height="70">
+<div>
+<h1>A Sweet Start</h1>
+<p>A beginner's guide to baking.</p>
+</div>
+</header>
+
+<!--This is the start of the navigation section-->
+<nav>
+<ul>
+<li><a href="index.html">The Basics</a>
+<li><a href="recipes.html">Recipes</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li class="active"><a href="support.html">Support Form</a></li>
+<li><a href="tips.html">Helpful Tips</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+</ul>
+</nav>
+
+ <!--This is the start of the main section-->
+<main>
+    <h1>Beginner Sign Up and Support Form</h1>
+    <form method="get" class="myForm" action="thanks.html">
+
+<fieldset>
+    <legend>Baker Information</legend>
+<label>First Name*<input type="text" name="first_name" required></label>
+<label>Last Name* <input type="text" name="last_name" required></label>
+<label>Phone Number* <input type="tel" name="phone" required placeholder="123-456-7890"></label>
+</fieldset>
+
+<fieldset>
+    <legend>Skill Level</legend>
+    <label><input type="radio" name="level" value="beginner">Beginner</label>
+    <label><input type="radio" name="level" value="indermdiate">Intermediate</label>
+    <label><input type="radio" name="level" value="advanced">Advanced</label>
+</fieldset>
+
+<fieldset>
+    <legend>What baking tools do you currently have?</legend>
+    <label><input type="checkbox" name="bowls" value="bowls">Mixing Bowls</label>
+    <label><input type="checkbox" name="cups" value="cups">Measuring Cups and Spoons</label>
+    <label><input type="checkbox" name="mixer" value="mixer">Hand Held or Standing Mixer</label>
+    <label><input type="checkbox" name="sheet" value="sheet">Baking Sheets and Pans</label>
+</fieldset>
+
+<fieldset>
+    <legend>Favorite type of baking?</legend>
+    <select name="type">
+        <option value="none">Please Select</option>  
+        <option value="cookies">Cookies</option>  
+        <option value="cakes">Cakes</option>  
+        <option value="breads">Breads</option>  
+        <option value="pastries">Pastries</option> 
+        <option value="bars">Dessert Bars</option> 
+        <option value="other">Other</option> 
+    </select>
+</fieldset>
+
+<fieldset>
+    <label>What would you like help with?</label>
+        <textarea name="help"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>Sign me up for:</legend>
+    <label><input type="checkbox" name="tips" value="tips">Weekly tips</label>
+    <label><input type="checkbox" name="recipes" value="recipes">Monthly recipes</label>
+    <label><input type="checkbox" name="offers" value="offers">Special offers and discounts</label>
+    <label><input type="checkbox" name="events" value="events">Baking community events</label> 
+</fieldset>
+
+<input type="submit" value="Submit Form">
+
+</main>
+
+
+ <!--This is the start of the footer section-->
+ <footer>
+<p>&copy; 2024  |  Marianne Wagstaff  &bull; <a href="mailto:email@gmail.com">Email Us</a></p>
+ </footer>
+
+</body>
+
+</html>
