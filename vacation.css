@@ -1,0 +1,259 @@
+
+* {box-sizing: border-box;}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .nanum-myeongjo-regular {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nanum-myeongjo-bold {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .nanum-myeongjo-extrabold {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  /*Header stuff here */
+
+header {
+    background-color: #293241;
+    padding: 1.5rem 4vw;
+    display: flex;
+}
+
+header div {
+    padding-left: 1.5vw;
+}
+
+header h1 {
+margin: 0;
+color: #B9BA98;
+}
+
+header p{
+    margin: 0;
+    color: #FAECD7;
+    letter-spacing: normal;
+}
+
+/* Nav stuff here */
+
+/*small screens*/
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 0vw;
+        list-style-type: none;
+    }
+    nav a {
+        display: block;
+        padding: .6rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        border: solid 1px #293241;
+        border-radius: 10px;
+        color: #293241;
+    }
+    nav .active a {
+        background-color: #E4AE83;
+        color: #FAECD7;
+    }
+
+}   /* end of the media query*/
+
+
+/*Big screens */
+@media only screen and (min-width: 601px) {
+    
+    nav {
+        background-color: #E4AE83;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0 2vw;
+        margin: 0;
+        display: flex;
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: #FAECD7;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    
+    nav li.active a {
+        background-color: #B9BA98;
+        color: #faecd7;
+    }
+    
+    nav a:hover {
+        color: #293241;
+    }
+}   /* end of the media query*/
+
+/*main section */
+
+.beachhero {
+    width: 100%;
+    margin: 0;
+}
+
+.beachhero img {
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1rem 4vw;
+ }
+
+ main h1 {
+    color: #293241;
+ }
+
+ main h2 {
+    color: #B9BA98;
+ }
+
+ main p {
+    color: #293241;
+ }
+
+ #myvideo {
+    width: 100%;
+    height: 700px;
+}
+
+ /*image formatting*/
+
+ figure.wrapped {
+    width: 24%;
+    margin: 0 0 0 2%;
+    float:right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height:auto;
+    border: 5px solid #B9BA98;
+    border-radius: 18px;
+}
+
+figure.wrapped img:hover {
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+}
+
+figure.beachhero {
+    border-radius: 10px;
+    overflow:hidden;
+}
+
+figure.gallery img {
+    border: 5px solid #B9BA98;
+    border-radius: 18px;
+}
+
+figure.gallery {
+    margin: 0 auto 3vw;
+    width: 500px;
+    align-items: center;
+}
+
+figure.gallery img:hover {
+    box-shadow: 2px 2px 7px rgba(0,0,0,0.3);
+}
+
+figure.gallery figcaption {
+    text-align: center;
+    font-size: 1rem;
+    color: #293241;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container{
+    width: 1150px; 
+    margin: 0 auto;
+}
+
+/* form stuff here */
+.myform fieldset {
+    border: 1px solid #B9BA98;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.myform legend {
+    color: #293241;
+    font-size: 1rem;
+}
+
+.myform label {
+    margin: .8rem;
+}
+
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myorm textarea {
+    display: block;
+}
+
+.myform [type=text], .myform [type=tel], .myform select, .myorm textarea {
+    border: solid 1px #293241;
+    padding: .4rem;
+    width: 250px;
+    border-radius: .5rem;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+}
+
+.myform textarea {
+    height: 8rem;
+}
+
+.myform :required {
+    background-color: #e6e6d5;
+}
+
+.myform [type=submit]{
+    background-color: #e6e6d5;
+    border: solid 1px #293241;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: #293241;
+    margin: 1rem 0 0 1vw;
+}
+
+/* footer section here */
+
+footer {
+    background-color: #E4AE83;
+    text-align: center;
+    color: #293241;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a {
+    color: #293241;
+}
